@@ -1,0 +1,33 @@
+{
+  "name": "@chellimiller/action-api",
+  "version": "1.0.0",
+  "description": "API to describe actions that can be passed into button components or other components that could execute an action",
+  "author": "Michelle Miller <chellicmiller@gmail.com>",
+  "homepage": "https://github.com/chellimiller/web-projects",
+  "license": "MIT",
+  "directories": {
+    "src": "src"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chellimiller/web-projects.git"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "bugs": {
+    "url": "https://github.com/chellimiller/web-projects/issues"
+  },
+  "devDependencies": {
+    "typescript": "^3.7.5"
+  },
+  "peerDependencies": {
+    "typescript": "^3.7.5"
+  }
+}
