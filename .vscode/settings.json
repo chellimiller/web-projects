@@ -5,12 +5,13 @@
     "editor.codeActionsOnSave": {
         "source.fixAll": true,
     },
+    "files.insertFinalNewline": true,
     "[json]": {
         "editor.tabSize": 4,
         "editor.quickSuggestions": {
             "strings": true
         },
-        "editor.suggest.insertMode": "replace"
+        "editor.suggest.insertMode": "replace",
     },
     "[typescript]": {
         "editor.tabSize": 2,
