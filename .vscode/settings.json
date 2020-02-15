@@ -1,6 +1,19 @@
 {
+    "editor.detectIndentation": false,
     "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
     "editor.codeActionsOnSave": {
         "source.fixAll": true,
-    }
+    },
+    "[json]": {
+        "editor.tabSize": 4,
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace"
+    },
+    "[typescript]": {
+        "editor.tabSize": 2,
+    },
+    "typescript.format.semicolons": "remove",
 }
