@@ -1,3 +1,3 @@
 export type Action = {
-    name: string;
+  name: string
 }
