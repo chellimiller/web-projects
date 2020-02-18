@@ -1,7 +1,9 @@
+import { Result } from '@chellimiller/result-api'
+
 /**
  * Function to execute an action.
  */
-export type ActionExecutor = () => void
+export type ActionExecutor<DATA, ERROR> = () => Promise<Result<DATA, ERROR>>
 
 /**
  * Describes the severity of an action. Allows differentiation between most actions and potentially dangerous actions.
@@ -16,7 +18,7 @@ export enum ActionSeverityType {
 /**
  * An action that can be executed by the click of a button or with another component.
  */
-export type Action = {
+export type Action<DATA, ERROR> = {
   /**
    * Name of the action. This would appear on the button.
    */
@@ -30,7 +32,7 @@ export type Action = {
   /**
    * Function to execute the action. If this is undefined, the button should be disabled.
    */
-  execute?: ActionExecutor
+  execute?: ActionExecutor<DATA, ERROR>
 
   /**
    * Severity of action. If not provided, `ActionSeverityType.STANDARD` should be assumed.
