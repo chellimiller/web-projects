@@ -2,6 +2,7 @@
     "name": "root",
     "private": true,
     "scripts": {
+        "all": "npm run lint && npm run build",
         "build": "lerna run build --stream",
         "lerna": "lerna",
         "lint": "lerna run lint --stream"
