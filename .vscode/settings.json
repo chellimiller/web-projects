@@ -1,0 +1,33 @@
+{
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+    },
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/CVS": true,
+        "**/dist": true,
+        "**/node_modules": true,
+        "**/package-lock.json": true,
+        "LICENSE": true,
+        "packages/**/.eslintrc.json": true,
+    },
+    "files.insertFinalNewline": true,
+    "[json]": {
+        "editor.tabSize": 4,
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace",
+    },
+    "[typescript]": {
+        "editor.tabSize": 2,
+    },
+    "typescript.format.semicolons": "remove",
+    "typescript.preferences.quoteStyle": "single",
+}
