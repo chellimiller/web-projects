@@ -4,9 +4,14 @@
 export type ActionExecutor = () => void
 
 /**
- * Helps describe how the button or other component for the action should be displayed.
+ * Describes the severity of an action. Allows differentiation between most actions and potentially dangerous actions.
  */
-export type ActionType = 'standard' | 'primary' | 'warning' | 'danger'
+export enum ActionSeverityType {
+  /** Applies to most actions. */
+  STANDARD = 'STANDARD',
+  /** Taking this action could potentially have negative consequences. For example, deleting an object. */
+  DANGER = 'DANGER',
+}
 
 /**
  * An action that can be executed by the click of a button or with another component.
@@ -28,7 +33,7 @@ export type Action = {
   execute?: ActionExecutor
 
   /**
-   * Type of the action. Defines how the action should be displayed.
+   * Severity of action. If not provided, `ActionSeverityType.STANDARD` should be assumed.
    */
-  type?: ActionType
+  severity?: ActionSeverityType
 }
