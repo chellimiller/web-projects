@@ -1,15 +1,25 @@
 {
     "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
         "declaration": true,
-        "keyofStringsOnly": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
         "isolatedModules": true,
-        "module": "system",
-        "noImplicitAny": true,
+        "keyofStringsOnly": true,
+        "lib": [
+            "DOM",
+            "DOM.Iterable",
+            "ESNext"
+        ],
+        "module": "ESNext",
+        "moduleResolution": "node",
         "noUnusedLocals": true,
         "noUnusedParameters": true,
-        "preserveConstEnums": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "strict": true,
         "sourceMap": true,
-        "strictNullChecks": true,
+        "target": "ES3"
     },
     "include": [
         "src/**/*"
