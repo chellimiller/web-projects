@@ -4,7 +4,6 @@
         "es6": true
     },
     "extends": [
-        "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended"
     ],
     "globals": {
@@ -20,7 +19,7 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "indent": [
+        "@typescript-eslint/indent": [
             "error",
             2
         ],
@@ -28,11 +27,11 @@
             "error",
             "unix"
         ],
-        "quotes": [
+        "@typescript-eslint/quotes": [
             "error",
             "single"
         ],
-        "semi": [
+        "@typescript-eslint/semi": [
             "error",
             "never"
         ],
