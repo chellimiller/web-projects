@@ -5,6 +5,8 @@
     "author": "Michelle Miller <chellicmiller@gmail.com>",
     "homepage": "https://github.com/chellimiller/web-projects",
     "license": "MIT",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "directories": {
         "src": "src"
     },
