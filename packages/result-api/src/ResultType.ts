@@ -18,5 +18,3 @@ export enum ResultType {
   // eslint-disable-next-line no-unused-vars
   UNKNOWN_ERROR = 'unknown',
 }
-export * from './Result'
-export * from './ResultType'
