@@ -6,6 +6,7 @@
         "build": "lerna run build --stream",
         "lerna": "lerna",
         "lint": "lerna run lint --stream",
+        "serve:canvas": "lerna run start --stream --scope=react-canvas-app",
         "test": "lerna run test --stream"
     },
     "devDependencies": {
