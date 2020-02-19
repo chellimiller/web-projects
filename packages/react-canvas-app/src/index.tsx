@@ -1,11 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import * as serviceWorker from './serviceWorker'
+import Canvas from './components/Canvas'
 
 const App = () => (
-  <div>
-    Hello World
-  </div>
+  <Canvas height={500} width={700} style={{ border: '1px solid black' }} />
 )
 
 ReactDOM.render(<App />, document.getElementById('root'))
