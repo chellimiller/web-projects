@@ -5,6 +5,7 @@
     "editor.codeActionsOnSave": {
         "source.fixAll": true,
     },
+    "editor.tabSize": 2,
     "files.exclude": {
         "**/.DS_Store": true,
         "**/.git": true,
