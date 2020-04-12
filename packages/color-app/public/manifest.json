@@ -1,6 +1,7 @@
 {
     "short_name": "Color App",
     "name": "Color App",
+    "description": "A simple app for converting colors and creating palettes.",
     "icons": [
         {
             "src": "favicon.ico",
@@ -18,7 +19,9 @@
             "sizes": "512x512"
         }
     ],
+    "lang": "en-US",
     "start_url": ".",
+    "scope": ".",
     "display": "standalone",
     "theme_color": "#000000",
     "background_color": "#ffffff"
