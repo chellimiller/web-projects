@@ -1,9 +1,5 @@
 #!/bin/bash
 
-yell() { echo "$0: $*" >&2; }
-die() { yell "$*"; exit 111; }
-try() { "$@" || die "cannot $*"; }
-
 # Set Variables
 SRC_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 CERT_DIR="$SRC_DIR/certificates"
